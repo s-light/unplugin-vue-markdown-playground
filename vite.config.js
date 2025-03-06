@@ -10,8 +10,8 @@ import prism from "markdown-it-prism";
 
 // const myRenderingInside = (tokens, options, env, md) => {
 const myRenderingInside = async (tokens, options, env) => {
-  console.log("tokens", tokens);
-  console.log("options", options);
+  // console.log("tokens", tokens);
+  // console.log("options", options);
   console.log("env", env);
   // console.log("md", md);
 }
@@ -26,6 +26,19 @@ export default defineConfig({
       markdownItUses: [prism],
       transforms: {
         renderingInside: myRenderingInside,
+      },
+      break: true,
+      excerpt: true,
+      frontmatter: true,
+      exposeFrontmatter: true,
+      exportFrontmatter: true,
+      frontmatterOptions: {
+        grayMatterOptions: {
+          eval: false,
+          excerpt: true,
+          excerpt_separator: "<!-- more_details -->",
+        },
+        // renderExcerpt:true, // default: true
       },
     }),
     vueDevTools(),

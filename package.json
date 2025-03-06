@@ -10,6 +10,7 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
+    "@mdit-vue/plugin-frontmatter": "^2.1.3",
     "highlight.js": "^11.11.1",
     "markdown-it-async": "^2.1.0",
     "markdown-it-prism": "^2.3.0",

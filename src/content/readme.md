@@ -1,4 +1,16 @@
+---
+title: Hello World
+tags: [key, switch, input]
+id: 25
+---
+
 # Hello World :-)
+
+we have some text before the break.
+
+<!-- more_details -->
+
+and lots more after the break...
 
 this contains an example for an imported fenced code block:
 
